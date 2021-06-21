@@ -1,0 +1,13 @@
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\obj\Debug\netcoreapp3.1\Human.csprojAssemblyReference.cache
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\obj\Debug\netcoreapp3.1\Human.AssemblyInfoInputs.cache
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\obj\Debug\netcoreapp3.1\Human.AssemblyInfo.cs
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\obj\Debug\netcoreapp3.1\Human.csproj.CoreCompileInputs.cache
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\bin\Debug\netcoreapp3.1\Human.exe
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\bin\Debug\netcoreapp3.1\Human.deps.json
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\bin\Debug\netcoreapp3.1\Human.runtimeconfig.json
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\bin\Debug\netcoreapp3.1\Human.runtimeconfig.dev.json
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\bin\Debug\netcoreapp3.1\Human.dll
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\bin\Debug\netcoreapp3.1\Human.pdb
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\obj\Debug\netcoreapp3.1\Human.dll
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\obj\Debug\netcoreapp3.1\Human.pdb
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\Human\obj\Debug\netcoreapp3.1\Human.genruntimeconfig.cache
