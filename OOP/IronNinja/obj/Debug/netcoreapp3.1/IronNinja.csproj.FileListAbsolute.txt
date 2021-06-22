@@ -1,0 +1,13 @@
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.csprojAssemblyReference.cache
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.AssemblyInfoInputs.cache
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.AssemblyInfo.cs
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.csproj.CoreCompileInputs.cache
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.exe
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.deps.json
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.runtimeconfig.json
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.runtimeconfig.dev.json
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.dll
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.pdb
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.dll
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.pdb
+C:\Users\abeer\OneDrive\Desktop\Main\C#_Stack\OOP\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.genruntimeconfig.cache
