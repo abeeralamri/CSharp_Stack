@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor Fun</title>
+</head>
+<body>
+    
+    <h1>Here are some delicious foods!</h1>
+    @{
+        List<string> foodList = new List <string>
+            {
+                "Apple Pie",
+                "Burritos",
+                "Clams Casino",
+                "Donuts",
+            };
+
+            foreach(string food in foodList){
+
+                if(food.Contains('C')){
+                    
+                    <p style="color: red;">@food</p>
+                }
+                else{
+                    <p>@food</p>
+                }
+
+            }
+    }
+</body>
+</html>
