@@ -1,0 +1,78 @@
+.page{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.head h1{
+    margin-top: 30px;
+}
+.image img{
+    width: 280px;
+    height: 250px;
+}
+.image p {
+    margin-right: 50px;
+}
+.main{
+    display: flex;
+}
+.main p{
+  
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+}
+.main{
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.Pmain .Pimage {
+    display: flex;
+ 
+    margin-bottom: 50px;
+}
+.Pmain{
+    margin-top: 50px;
+    margin-left: 500px;
+}
+.Pimage img{
+    width: 100px;
+    height: 100px;
+}
+.p1{
+    margin-left: 50px;
+    border: solid 2px black;
+    width: 500px;
+  
+    display: block;
+    
+}
+.p2{
+    margin-left: 50px;
+    border: solid 2px black;
+    width: 500px;
+  
+    display: block;
+    
+}
+.p3{
+    margin-left: 50px;
+    border: solid 2px black;
+    width: 500px;
+  
+    display: block;
+    
+}
+.Cmain {
+
+    display: inline;
+
+}
+
+.form-control{
+    justify-content: center;
+    width: 350px;
+    margin-left: 680px;
+    margin-bottom: 20px;
+}
