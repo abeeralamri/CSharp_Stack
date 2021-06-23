@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Display</title>
+    <style>
+        h1{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .Time{
+            border: solid 2px black;
+            text-align: center;
+            width: 250px;
+            height: 200px;
+            margin: 0 auto;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+
+    @{
+        DateTime CurrentTime = DateTime.Now;
+        <h1>The curren time and date:</h1>
+        <div class="Time">
+            
+            <h6>@CurrentTime</h6>
+        </div>
+    }
+    
+</body>
+</html>
