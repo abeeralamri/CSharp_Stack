@@ -1,0 +1,24 @@
+@using ViewModelFun.Models
+@model int[]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 >Here are some Numbers!</h1>
+        <div style="border: solid 2px black; text-align: left; width:150px; margin-left:200px;">
+            @foreach (var num in @Model)
+            {
+                <p >@num</p>
+                
+            }
+        </div>
+    </div>
+</body>
+</html>
