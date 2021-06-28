@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css">
+    <title>Dojodachi</title>
+</head>
+<body>
+    <div class = "play">
+        <p>Fullness: @ViewBag.Fullness</p>
+        <p>Happines: @ViewBag.Happy</p>
+        <p>Meal: @ViewBag.Meal</p>
+        <p>Energy: @ViewBag.Energy</p>
+        
+    </div>
+    
+  @{
+      
+     
+        if (TempData["status"] == "over" || TempData["status"] == "won")
+        {
+            <div class="message">
+                <p>@TempData["msg"]</p>
+            </div>
+            <div class="restart-btn">
+                <a href="restart" ><button class="btn btn-primary">Restart</button></a>
+            </div>
+
+        }
+
+        else {
+            <div class="message">
+                <p>@TempData["msg"]</p>
+            </div>
+            <div class="btn">
+
+                <a href="/Feed"><button value = "Feed"class="btn btn-primary">Feed</button></a>
+                <a href="/playing"><button value = "Playing" class="btn btn-primary">Play</button></a> 
+                <a href="/working"><button value = "Working" class="btn btn-primary">Work</button></a>
+                <a href="/sleeping"><button value = "Sleeping" class="btn btn-primary">Sleep</button></a>
+
+            </div>
+            
+        
+  }
+   
+  }
+  
+    
+</body>
+</html>
