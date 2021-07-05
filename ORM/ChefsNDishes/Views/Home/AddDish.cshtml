@@ -1,0 +1,50 @@
+@model Dish
+  
+            <a href="/">Home</a>
+            <h1 style="margin-left: 450px;">Add a new Dish!</h1>
+                    
+            <span style="color: red;" asp-validation-for="Calorie"></span><br>
+            <span style="color: red;" asp-validation-for="Name"></span><br>
+            <span style="color: red;" asp-validation-for="Tastiness"></span><br>
+            <span style="color: red;" asp-validation-for="Desc"></span><br>
+
+
+            <form  asp-action="CreateDish" asp-controller = "Home" method = "post">
+                <div class="form-group">
+                    <label asp-for = "Name">Name of Dish</label>
+                   <input name="Name" asp-for ="Name" type="text" class="form-control">
+                </div>    
+                <div class="form-group">
+                    <label asp-for = "Calorie">Number of Calories</label>
+                   <input name="Calorie" asp-for ="Calorie" type="number" class="form-control">
+                </div> 
+                <div class="form-group">
+                    <label name="ChefId" asp-for ="ChefId">Chef</label>
+                    <select name="ChefId" asp-for="ChefId" id="ChefId" class="form-select" aria-label="Default select example">
+                    @{
+                        foreach(var chef in ViewBag.ListChefs)
+                        {
+                                <option value="@chef.ChefId">@chef.FName @chef.LName</option>
+                        }
+                    }
+                   </select>
+                </div> 
+                <div class="form-group">
+                    <label asp-for = "Tastiness">Tastiness</label>
+                    <select name="Tastiness" asp-for = "Tastiness" class="form-select" aria-label="Default select example">
+                        <option value="1" >1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                        <option value="4" >4</option>
+                        <option value="5" >5</option>
+                    </select>
+                </div> 
+                <div class="form-group">
+                    <label asp-for = "Desc">Description</label>
+                    <textarea name="Desc" asp-for = "Desc" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <button style = "margin-bottom:20px"class="btn btn-primary">Add Dish</button>       
+    
+            </form>                
+        </div>
+    </div>
