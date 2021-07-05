@@ -1,0 +1,38 @@
+@model Transaction
+
+
+
+<div style="display: flex;">
+    <h1>Welcome @ViewBag.User.FName @ViewBag.User.LName</h1>
+    <h6 style="border: solid 2px black; margin-left:100px">Current balance: $@String.Format("{0:0.00}", @ViewBag.User.Balance) </h6>
+    <a style="margin-left: 100px;" href="/logout">Logout</a>
+</div>
+<span style="color: red;" asp-validation-for="Amount"></span><br>
+<form asp-action="Transaction" asp-controller = "Home" method = "post">
+    <Label asp-for = "Amount">Deposit/Withdrow: </Label>
+    <input type="number" asp-for = "Amount">
+    <button class="btn btn-primary">Sumbit</button>
+</form>
+<br>
+<table class="table">
+                   <thead>
+                        <tr>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+
+                       
+                            @{
+                            
+                            foreach(var trans in ViewBag.Trans) 
+                            {
+                            
+                                <tr>
+                                    <td>$@String.Format("{0:0.00}", @trans.Amount)</td>
+                                    <td>@trans.CreatedAt</td>
+                                </tr>
+                            }
+                        }
+                       
+               </table>

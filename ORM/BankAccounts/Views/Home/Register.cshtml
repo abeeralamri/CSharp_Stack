@@ -1,0 +1,40 @@
+﻿@model User
+
+    <div style="margin-bottom = 50px" >
+        <div style=" display:flex;">
+            <h1 style="margin-left: 400px; margin-right: 100px;">Register</h1>
+            <a href="/login">Already Registered?</a>
+            </div> 
+            <div style="width: 500px">
+                <span style="color: red;" asp-validation-for="FName"></span><br>
+                <span style="color: red;" asp-validation-for="LName"></span><br>
+                <span style="color: red;" asp-validation-for="Email"></span><br>
+                <span style="color: red;" asp-validation-for="Password"></span><br>
+                <span style="color: red;" asp-validation-for="Confirm"></span>
+                
+                <form  asp-action="Create" asp-controller = "Home" method = "post">
+                    <div class="form-group">
+                        <label asp-for ="FName" >First Name</label>
+                        <input name="FName" asp-for ="FName" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for = "LName">Last Name</label>
+                        <input name="LName" asp-for ="LName" type="text" class="form-control">
+                    </div>  
+                    <div class="form-group">
+                        <label asp-for = "Email">Email</label>
+                        <input name="Email" asp-for ="Email" type="text" class="form-control">
+                    </div> 
+                    <div class="form-group">
+                        <label asp-for = "Password">Password</label>
+                        <input name="Password" asp-for ="Password" type="password" class="form-control">
+                    </div> 
+                    <div class="form-group">
+                        <label asp-for = "Confirm">Confirm Password</label>
+                        <input name="Confirm" asp-for ="Confirm" type="password" class="form-control">
+                    </div> 
+                    <button style = "margin-bottom = 20px"class="btn btn-primary">Sign up</button>  
+                </form>
+            </div>
+        </div>
+    </div>
