@@ -4,13 +4,75 @@
         <p>Using the SportsORM, complete all the following queries and show their results on Level2.cshtml.</p>
         <ol>
             <li>...all teams in the Atlantic Soccer Conference</li>
+            <ul>
+                @foreach (var l in ViewBag.Allteam)
+                {
+                    <li>@l.TeamName</li>
+                }
+            </ul>
             <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)</li>
+            <ul>
+                @foreach (var l in ViewBag.CurrPlayerBoston)
+                {
+                    <li>@l.FirstName @l.LastName</li>
+                    
+
+                }
+            </ul>
             <li>...all (current) players in the International Collegiate Baseball Conference</li>
+            <ul>
+                @foreach (var l in ViewBag.CurrPlayerBaseball)
+                {
+                    <li>@l.TeamName</li>
+                    
+
+                }
+            </ul>
             <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"</li>
+            <ul>
+                @foreach (var l in ViewBag.CurrPlayerAmerican)
+                {
+                    <li>s@l.FirstName @l.LastName</li>
+                    
+
+                }
+            </ul>
             <li>...all football players</li>
+            <ul>
+                @foreach (var l in ViewBag.Allfotball)
+                {
+                    <li>@l.FirstName @l.LastName</li>
+                    
+
+                }
+            </ul>
             <li>...all teams with a (current) player named "Sophia"</li>
+            <ul>
+                @foreach (var l in ViewBag.AllteamSophia)
+                {
+                    <li>@l.FirstName @l.LastName</li>
+                    
+
+                }
+            </ul>
             <li>...all leagues with a (current) player named "Sophia"</li>
+            <ul>
+                @foreach (var l in ViewBag.AllteamLSophia)
+                {
+                    <li>@l.FirstName @l.LastName</li>
+                    
+
+                }
+            </ul>
             <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
+            <ul>
+                @foreach (var l in ViewBag.flores)
+                {
+                    <li>@l.FirstName @l.LastName</li>
+                    
+
+                }
+            </ul>
         </ol>
     </div>
 </div>
