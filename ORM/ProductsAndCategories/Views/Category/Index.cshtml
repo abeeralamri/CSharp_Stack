@@ -1,0 +1,16 @@
+@model Category
+<h1><a href="/">Products</a> | <a href="/category">Categories</a></h1>
+<span style="color: red;" asp-validation-for="Name"></span><br>
+<form  asp-action="Create" asp-controller = "Category" method = "post">
+    <div class="form-group">
+            <label asp-for ="Name" > Name</label>
+            <input name="Name" asp-for ="Name" type="text" class="form-control">
+    </div>
+    <button style = "margin-bottom = 20px"class="btn btn-primary">Add</button>      
+</form>
+
+<h1>Existing Categories</h1>
+@foreach(var cat in ViewBag.AllCategories)
+{
+    <p><a asp-action="Show" asp-controller="Category" asp-route-categoryId="@cat.CategoryId">@cat.Name</a></p>
+}
