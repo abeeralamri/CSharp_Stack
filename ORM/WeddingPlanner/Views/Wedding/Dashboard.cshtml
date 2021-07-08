@@ -1,0 +1,50 @@
+@model List<Wedding>
+<h1>Welcome to Wedding Planner</h1>
+<a href="/logout">Logout</a>
+<table class="table">
+    <tr>
+        <th scope="col">Wedding</th>
+        <th scope="col">Date</th>
+        <th scope="col">Guest</th>
+        <th scope="col">Action</th>
+    </tr>
+    @foreach (Wedding w in Model)
+    {
+        <tr>
+            <td>
+                <a href="WeddingDetails/@w.WeddingId">@w.Wedder1 & @w.Wedder2</a>
+            </td>
+            <td>
+                @w.Date 
+            </td>
+            <td>
+                @w.UserWedding.Count
+            </td>
+            <td>
+                @{
+                    if(ViewBag.UserID == w.Creator.UserId)
+                    {
+                        <a href="/delete/@w.WeddingId"><button class="btn btn-danger">Delete</button></a>
+                    }
+
+                    
+                         else if (w.UserWedding.Any( a => a.UserId == ViewBag.UserID))
+                        {
+                            <a href="/unjoin/@w.WeddingId"><button class="btn btn-dark">Un-RSVP</button></a>
+                        }
+                        else
+                        {
+                        <a href="/join/@w.WeddingId"><button class="btn btn-dark">RSVP</button></a>
+
+                        }
+                    }
+                
+            </td>
+        </tr>
+    }
+    
+</table>
+
+<div class="footer">
+    <a href="/AddWedding"><button class="btn btn-primary">New Wedding</button></a>
+</div>

@@ -1,0 +1,23 @@
+@model Wedding
+<p><a href="/dashboard">Dashboard</a> | <a href="/logout">Logout</a></p>
+<h1>@Model.Wedder1 and @Model.Wedder2</h1>
+<p>Date @Model.Date</p>
+
+<p>Guest: </p>
+@{
+    foreach (var g in Model.UserWedding)
+    {
+        <ul>
+            @g.User.FName @g.User.LName
+        </ul>
+    }
+    <p>Address: @Model.WeddingAddress</p>
+
+}
+@{
+    if(Model.UserId == ViewBag.UserID)
+    {
+        <a href="/edit/@Model.WeddingId"><button class="btn btn-dark">Edit</button></a>
+
+    }
+}
